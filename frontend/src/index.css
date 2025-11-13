@@ -1,0 +1,85 @@
+@import "tailwindcss";
+
+
+/* .theme-btn {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  cursor: pointer;
+  margin: 5px;
+  display: inline-block;
+}
+
+
+  .theme-white { background-color: #ffffff; }
+.theme-red { background-color: #d33100; }
+.theme-orange { background-color: #f39c12; }
+.theme-green { background-color: #1abc25; }
+.theme-blue { background-color: #3498db; }
+.theme-purple { background-color: #9b59b6; }  */
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.8s ease-in-out;
+}
+
+.container1{
+  background-color: #fff;
+  padding: 32px 48px;
+  border-radius: 8px;
+  box-shadow: 8px 8px 24px 0px rgba(66,58,90,1);
+  max-width: 100%;
+  border-radius: 10px;
+}
+.container1>h1{
+  margin-bottom: 20px;
+}
+.container1>form{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.container1 div{
+  display: flex;
+  flex-direction: column;
+}
+
+.container1 input{
+  padding: 10px;
+  font-size: 20px;
+  width: 100%;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #0f0e0e;
+}
+
+.container1 input::placeholder{
+  font-size: 16px;
+  color: #a1a1a1;
+  font-style: italic;
+}
+ 
+
+
+ @keyframes bounce-slow {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+.animate-bounce-slow {
+  animation: bounce-slow 4s infinite ease-in-out;
+} 
